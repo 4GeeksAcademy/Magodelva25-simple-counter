@@ -1,4 +1,33 @@
 
+.wrapper {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aquamarine;
+
+}
+
+.clock {
+
+    width: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10rem;
+    margin: auto;
+    
+
+}
+
+.clock > p{
+    background-color: white;
+    padding: 6rem;
+    font-size: 4rem;
+    display: flex;
+
+}
 /* 
 
     You can write your own styles here...
