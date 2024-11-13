@@ -19,21 +19,21 @@ export function Clock() {
         unidadesRef.current = 0;
         decenasRef.current += 1;
       }
-      if (decenasRef.current === 100) {
+      if (decenasRef.current === 10) {
         decenasRef.current = 0;
         centenasRef.current += 1;
       }
-      if (centenasRef.current === 1000) {
+      if (centenasRef.current === 10) {
         centenasRef.current = 0;
         milesRef.current += 1;
       }
 
-      if (milesRef.current === 10000) {
+      if (milesRef.current === 10) {
         milesRef.current = 0;
         decenasMilesRef.current += 1;
       }
 
-      if (decenasMilesRef.current === 100000) {
+      if (decenasMilesRef.current === 10) {
         decenasMilesRef.current = 0;
         centenasMilesRef.current += 1;
       }
@@ -56,14 +56,17 @@ export function Clock() {
 
   return (
     <div className='wrapper'>
-      <div className='clock'>
+      <div className='clock-body'>
+        <div className='clock'>
+          <i class="fa fa-clock"></i>
           <p>{centenasMiles}</p>
           <p>{decenasMiles}</p>
           <p>{miles}</p>
           <p>{centenas}</p>
           <p>{decenas}</p>
           <p>{unidades}</p>
-      </div>
+        </div>
+      </div>  
     </div>
   );
 }
